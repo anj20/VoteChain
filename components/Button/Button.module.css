@@ -1,0 +1,16 @@
+.button {
+  margin-block: 2rem;
+  background-color: transparent;
+  border: 3px dotted green;
+  padding: 0.5rem 1rem;
+  color: green;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+  background-color: gray;
+  color: #231e39;
+}

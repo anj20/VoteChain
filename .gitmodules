@@ -1,0 +1,6 @@
+[submodule "contractPyth"]
+	path = contractPyth
+	url = https://github.com/anj20/contractPyth.git
+[submodule "subgraphTenderly"]
+	path = subgraphTenderly
+	url = https://github.com/anj20/subgraphTenderly.git

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #008000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #006400;
+  }
+}
+html,
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to right top,
+    #000000,
+    #07070a,
+    #0e0e15,
+    #151520,
+    #1c1c2b
+  );
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}

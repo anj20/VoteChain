@@ -1,0 +1,17 @@
+.input__box {
+  margin: 1vh;
+  width: 100%;
+  background-color: rgb(49, 78, 4);
+  padding: 0.5 rem;
+  border-radius: 0.2rem;
+}
+
+.input__box input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  color: black;
+  font-family: monospace;
+  font-size: large;
+  padding-inline: 0.5rem;
+}
