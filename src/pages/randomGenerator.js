@@ -56,14 +56,24 @@ const randomGenerator = () => {
     }
   };
 
+  const generateRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  const handleGenerateClick = async () => {
+    const number = generateRandomNumber(1, 100);
+    await handleFlip();
+    setResult(number);
+  };
+
   return (
     <div className={styles.container}>
-      <h1>Coin Flip</h1>
-      <button onClick={handleFlip} disabled={loading}>
-        {loading ? 'Flipping...' : 'Flip Coin'}
+      <h1 className={styles.title}>Random Generator</h1>
+      <button className={styles.button} onClick={handleGenerateClick} disabled={loading}>
+        {loading ? 'Genrating...' : 'Generate Number'}
       </button>
-      {result && <p>Result: {result}</p>}
-      {error && <p className={styles.error}>{error}</p>}
+      {result && <p>The Number is: {result}</p>}
+      {/* {error && <p className={styles.error}>{error}</p>} */}
     </div>
   );
 };

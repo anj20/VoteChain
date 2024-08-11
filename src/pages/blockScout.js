@@ -30,12 +30,18 @@ const blockScout = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Search Results</h1>
+      <h1 className={styles.title}>Exchange Rates</h1>
       {loading && <p>Loading...</p>}
       {error && <p className={styles.error}>{error}</p>}
-      {data && (
+      {data && data.items && data.items.length > 0 && (
         <div className={styles.results}>
-          <pre className={styles.pre}>{JSON.stringify(data, null, 2)}</pre>
+          {data.items.map((item) => (
+            <div key={item.address} className={styles.item}>
+              <p><strong>Address:</strong> <a href={`https://explorer.metall2.com${item.address_url}`} target="_blank" rel="noopener noreferrer">{item.address}</a></p>
+              <p><strong>Symbol:</strong> {item.symbol}</p>
+              <p><strong>Token Type:</strong> {item.token_type}</p>
+            </div>
+          ))}
         </div>
       )}
     </div>

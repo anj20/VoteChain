@@ -73,3 +73,19 @@
     font-size: 2rem;
   }
 }
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* space between images */
+}
+
+.imageContainer img {
+  width: 180px; /* adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* optional: rounded corners */
+}

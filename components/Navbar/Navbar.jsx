@@ -59,14 +59,22 @@ const Navbar = () => {
           <Link href={{ pathname: "/" }}>
             <p className="active">Home</p>
           </Link>
-          <Link href={{ pathname: "candidateRegistration" }}>
-            <h1>Candidate Registration</h1>
-          </Link>
           <Link href={{ pathname: "allowedVoters" }}>
             <h1>Voter Registration</h1>
           </Link>
           <Link href={{ pathname: "voterList" }}>
             <h1>Voter List</h1>
+          </Link><Link href={{ pathname: "candidateRegistration" }}>
+            <h1>Candidate Registration</h1>
+          </Link>
+          <Link href={{ pathname: "blockScout" }}>
+            <h1>BlockScout USDC</h1>
+          </Link>
+          <Link href={{ pathname: "randomGenerator" }}>
+            <h1>Random Generator</h1>
+          </Link>
+          <Link href={{ pathname: "pricePage" }}>
+            <h1>Price Page</h1>
           </Link>
         </div>
         <div className={Style.connect}>
